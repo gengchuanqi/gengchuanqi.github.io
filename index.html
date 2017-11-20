@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>girls_day.html</title>
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+	var name = "";
+	var reg = new RegExp("(^|&)" + "name" + "=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if(r != null) name = unescape(r[2]);
+function checkName()
+{
+	var inputName = document.getElementById("name").value;
+	alert(inputName);
+	if(name == "1" && inputName == "杨程鑫")
+	{
+		alert("你是杨程鑫");
+	}
+}
+</script>
+</head>
+<body>
+	<div style="width: 100%;text-align: center;">
+		<input id="name" type="text">
+		<button onclick="checkName()">确认</button>
+	</div>
+</body>
+</html>
