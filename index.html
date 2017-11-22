@@ -1,32 +1,202 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html><head>
 <title>girls_day.html</title>
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="this is my page">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"/>
+<script  src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
 <style type="text/css">
+.content
+{
+	margin-top:80px;
+	margin-bottom:80px;
+	margin-left:5%;
+	width:90%;
+}
+.words-div
+{
+	width: 100%;
+	min-height: 90%;
+	border: 1px solid #ddd;
+}
+.word-span
+{
+	display: block;
+	font-size: 50px;
+}
+.footer-span
+{
+	display: block;
+	font-size: 50px;
+	float: right;
+}
+#name
+{
+	float:left;
+	width:70%;
+	height:120px;
+	font-size:80px;
+	padding:15px
+}
+#name-btn
+{
+	float:left;
+	margin-left:5%;
+	width: 200px;
+	height:120px;
+	font-size:50px;
+}
 </style>
 <script type="text/javascript">
+$(document).ready(function()
+{
 	var name = "";
 	var reg = new RegExp("(^|&)" + "name" + "=([^&]*)(&|$)");
 	var r = window.location.search.substr(1).match(reg);
 	if(r != null) name = unescape(r[2]);
-function checkName()
-{
-	var inputName = document.getElementById("name").value;
-	alert(inputName);
-	if(name == "1" && inputName == "杨程鑫")
+	$("#name-btn").click(function()
 	{
-		alert("你是杨程鑫");
-	}
-}
+		var inputName = document.getElementById("name").value;
+		if(name == "1" && inputName == "毛莉")
+		{
+			alert("你是毛莉");
+			$(".content").empty();
+			var word = "<span class='word-span'>初见时，你傲若幽兰</span>";
+			word += "<span class='word-span'>再相遇，你面如桃花</span>";
+			word += "<span class='word-span'>人生若只如初见，初见惊艳，再见依然</span>";
+			word += "<span class='word-span'>翩若惊鸿，婉若游龙</span>";
+			word += "<span class='word-span'>你是九天上最灵动的忘忧人</span>";
+			word += "<span class='word-span'>你是红尘中最娇艳的花中仙</span>";
+			word += "<span class='word-span'>你以秋水为姿，我以诗词为心</span>";
+			word += "<span class='word-span'>我以我心绘你姿</span>";
+			word += "<span class='word-span'>愿岁月静好</span>";
+			word += "<span class='word-span'>愿你能永远盛开在最美的年华</span>";
+			word += "<span class='word-span'>你若安好便是晴天</span>";
+			word += "<span class='word-span'>你若不好便是晴天霹雳</span>";
+			word += "<span class='footer-span'>——毛莉</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(name == "2" && inputName == "周娟")
+		{
+			alert("你是周娟");
+			$(".content").empty();
+			var word = "<span class='word-span'>周娟，青春是最好的粉黛，笑容是最美的风采，气质是最美的装扮，自信是最大的自在。一路行来洒下一路风景，女生节，愿你拥有最靓的心情，享受最好的岁月！</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(name == "3" && inputName == "刘田田")
+		{
+			alert("你是刘田田");
+			$(".content").empty();
+			var word = "<span class='word-span'>亲爱的刘田田：</span>";
+			word += "<span class='word-span'>佛说前世500次回眸，才换来今生的一次相遇。哈哈！打住打住，我并不是爱上你了。这是女生节必须要经过流程。可知今晚我修仙，就为了写这东西。你感动不？哎，还要150个字。我不知道该怎么写。就这样尬聊吧。算了算了，我跟你说几个笑话。我还是要留一点有意义的东西。</span>";
+			word += "<span class='word-span'> 1.偶然想到桃花源记可能是一个误入死人国的故事。在黄泉里一村人幸福的生活着，忘了自己在战乱中已经惨死，不再有时间流逝。一个误入者给他们讲了之后发生的故事。所以误入者离开后再也找不到回去的路，因为bug已经被修复了。</span>";
+			word += "<span class='word-span'>2. 一位老人高兴地举行他的百岁生日宴会，一名记者走到他身边，问：“先生，请问您长寿的秘诀是什么？”　　老人想了一会儿后回答：“每天晚上我都喝一小杯葡萄酒，听说这对健康有好处。”　　记者追问：“就这些？”　　老人微笑着说：“还有，我取消了那次乘坐泰坦尼克号的旅行。” </span>";
+			word += "<span class='word-span'>至此敬礼！</span>";
+			word += "<span class='footer-span'>时间0:33</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(name == "4" && inputName == "李晨")
+		{
+			alert("你是李晨");
+			$(".content").empty();
+			var word = "<span class='word-span'>李晨：</span>";
+			word += "<span class='word-span'>你踏马从内蒙古走来，本以为你是百步飞剑的高大的汉子，最后，却是一个妹子。不过女的也没事，套马的妹子你威武雄壮，hhhh。（造我是谁吗？）</span>";
+			word += "<span class='word-span'>一个人能走多远，要看他与谁同行；一个人多么优秀，要看他身边有什么样的朋友；一个人能有多大的成就，要看他有谁指点。拥有蒙古神秘勇士之魂的你肯定可以带我飞。蒙古的星星一定是又大又亮的。你是整个天空，而我是星星，天空包容了星星的一切，而星星点缀了天空，让天空变得更加美丽，星星，也变得更加灿烂夺目。所以，愿你在女生节这个特殊的日子里，成为夜空中最闪亮的星！</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(name == "5" && inputName == "田田")
+		{
+			alert("你是田田");
+			$(".content").empty();
+			var word = "<span class='word-span'>亲爱的田田：</span>";
+			word += "<span class='word-span'>田田，多么好听的名字，就如同人一样美丽。在以后的四年中，我们是同学，是朋友，每天都生活在一起，彼此接触，彼此了解，相互学习，今天是女生节，女生节快乐，希望你天天都很开心，有一个好心情，每天都过得充实。</span>";
+			word += "<span class='footer-span'>你的同学</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(name == "6" && inputName == "柳彩云")
+		{
+			alert("你是柳彩云");
+			$(".content").empty();
+			var word = "<span class='word-span'>亲爱的柳彩云：</span>";
+			word += "<span class='word-span'>在这个特殊的日子里为您写了一封信。</span>";
+			word += "<span class='word-span'>阳光是你的点缀，优雅是你的智慧，温情是你的妩媚，爱心是你的宝贝。今天是女生节，愿快乐与你做陪，美丽将你跟随，青春为你陶醉。</span>";
+			word += "<span class='word-span'>天使把人间美丽的女人登记造册，送上帝审阅，上帝看后吩咐：女生节到了，给最善良最能干最聪明最美丽的女人写封信：祝你永远平安幸福健康快乐。</span>";
+			word += "<span class='footer-span'>your classment</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(name == "7" && inputName == "余洪铃")
+		{
+			alert("你是余洪铃");
+			$(".content").empty();
+			var word = "<span class='word-span'>亲爱的余洪铃：</span>";
+			word += "<span class='word-span'>时光匆匆，马上就要到女生节了。报道的场景就像在昨天发生的一样，那时候就站在你后面，直到报完到才发现我们是同学。女生节男生劫，在经历了双十一的洗礼以后又要感受一把女生节，但是只要你们能快乐，那一切都是值得的。希望你以后能越活越漂亮，钞票越来越多，成绩，零食永远吃不完。</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(name == "8" && inputName == "郑晓雯")
+		{
+			alert("你是郑晓雯");
+			$(".content").empty();
+			var word = "<span class='word-span'>郑晓雯同学：</span>";
+			word += "<span class='word-span'>时间匆匆而过，就快到女生节了。女生节是以你们女生为主题的节日，想必你们女生对这天都很激动吧，一大堆礼物正等着你们。而反观我们男生就扎心了，又要花钱了。不少男生抱怨是正常的，但实际上男生们像我一样内心里还是支持这节日的，通过这种形式，我们同学之间的关系更熟了，更加了解认识，尤其对某些情窦初开的男生，这是个好机会呦。</span>";
+			word += "<span class='word-span'>郑晓雯同学你是一个爱学习的女生，愿你一直坚持学习，老天不负有心人，你的努力终有回报，并且希望你在女生节这天过的开心，满带微笑地作为一名女生接受男生精心准备的礼物。</span>";	
+			word += "<span class='footer-span'>你的大一同学</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(name == "9" && inputName == "夏秋爽")
+		{
+			alert("你是夏秋爽");
+			$(".content").empty();
+			word += "<span class='word-span'>你是一个集霸气，智慧，开朗，活泼等等形容词于一体的“女孩子”，认识你已经三个月，无论从言语，还是从外表，都表达着一种无以言表的气质。你就好像是上品的西湖龙井，那种淡淡的苦涩是你的性格，越品你越有味道。在你那双又大又亮的眼睛里，我总能捕捉到你的宁静，你的热烈，你的聪颖，你的敏感。还记得辩论赛，你那高端而又上档次的话语，那端庄的举止，都让你显得有大家闺秀的神态。你也许没有一簇樱唇两排贝齿，但你的谈吐却高雅脱俗，机智过人。尽管你身材纤弱娇小，说话却正气凛然，很有力量，敢于向恶势力反抗，这是一种真正的精神美！爽儿哥，希望以后的你依旧是一个开朗活泼的女孩。女生节快乐哦！</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(name == "10" && inputName == "王丽燕")
+		{
+			alert("你是王丽燕");
+			$(".content").empty();
+			var word = "<span class='word-span'>王丽燕同学：</span>";
+			word += "<span class='word-span'>你好！时间如白驹过隙，悄悄的流过，一转眼就到了女生节。女生节是以你们女生为主题的节日，通过这个节日，能让同学之间的关系更熟了，更加了解和认识，让我们真正的成为一个大家庭。</span>";
+			word += "<span class='word-span'>王丽燕同学，迷人微笑是你的名片，温柔美丽是你的标签，善良可爱是你的外号，纯洁优雅是你的小名。你的幸福总是很简单，像碧水绕山；你的心情总是很灿烂，像花儿绽放；你的歌声总是很明快，像小鸟啁啾；你的梦想总是很精彩，像彩虹映天。愿你摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。有一分热，发一分光。就令萤火一般，也可以在黑一点光，不必等候炬火。</span>";
+			word += "<span class='word-span'>女生是可人的小鸟，在青春的枝头歌唱；女生是馥郁的花香，在梦想的舞台怒放；女生是典雅的文字，在心灵的诗册里飞扬；女生节到了，祝你快乐幸福，能像燕子一样翱翔天际</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(name == "11" && inputName == "许淑姣")
+		{
+			alert("你是许淑姣");
+			$(".content").empty();
+			var word = "<span class='word-span'>王丽燕同学：</span>";
+			word += "<span class='word-span'>女生节快乐啦。</span>";
+			word += "<span class='word-span'>不知道你看到这封信的心情是什么样的，反正我写的时候还是挺激动的哈。从进班里第一次听到你名的时候就知道你长的很漂亮。果然后来见到本尊之后，人如其名。一定要相信你自己独一无二的，相信我们一定会在你需要的时候给你提供最有力的帮助的。所以说今天一定要玩的尽兴吃的开心哦。</span>";
+			word += "<span class='footer-span'>来自班里某个男生</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}		
+		else if(name == "12" && inputName == "李洁欣")
+		{
+			alert("你是李洁欣");
+			$(".content").empty();
+			var word = "<span class='word-span'>王丽燕同学：</span>";
+			word += "<span class='word-span'>常有闻闭月羞花，沉鱼落雁，善之极，丽难及。十里长亭望眼穿，百般想，千般念。你的容颜可以望穿世间的一切美好，你的气质可以渲染人生的一切纷繁。望你一眼，便是飘飖兮若轻云之坠月，再一眼，仿佛兮若流风之回雪。你的善不做作，你的美不浮夸，一切夸赞之词在你面前都是无力且垂死的挣扎。唯有完美可以与你平起平坐。值此女生节之际，洁欣，我想对你说三个字。谢谢你，谢谢你为班级的付出，谢谢你无私的奉献。愿女生节快乐………</span>";
+			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+	});
+});
 </script>
 </head>
 <body>
-	<div style="margin-top:80px;margin-left:5%;width:92%;">
-		<input id="name" type="text" style="float:left;width:70%;height:120px;font-size:80px;padding:15px">
-		<button onclick="checkName()" style="float:left;margin-left:9%;width: 17%;height:156px;">确认</button>
-	</div>>
+	<div class="content">
+		<input id="name" class="form-control" type="text">
+		<button id="name-btn" class="btn btn-primary">确认</button>
+	</div>
 </body>
 </html>
