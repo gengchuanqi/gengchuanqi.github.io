@@ -19,6 +19,21 @@ body
 	margin-left:5%;
 	width:90%;
 }
+.footer
+{
+	position:fixed;
+	width: 100%;
+	background: #000;
+	height: 50px;
+	bottom: 0px;
+	text-align: center;
+}
+.footer span
+{
+	color: #fff;
+	font-weight: bold;
+	font-size: 35px;
+}
 .error
 {
 	float: left;
@@ -80,7 +95,6 @@ $(document).ready(function()
 		var inputName = document.getElementById("name").value;
 		if((name == "1" && inputName == "毛莉") || inputName == key)
 		{
-			alert("你是毛莉");
 			$(".content").empty();
 			var word = "<span class='word-span'>初见时，你傲若幽兰</span>";
 			word += "<span class='word-span'>再相遇，你面如桃花</span>";
@@ -100,7 +114,6 @@ $(document).ready(function()
 		}
 		else if((name == "2" && inputName == "周娟") || inputName == key)
 		{
-			alert("你是周娟");
 			$(".content").empty();
 			var word = "<span class='word-span'>周娟，青春是最好的粉黛，笑容是最美的风采，气质是最美的装扮，自信是最大的自在。一路行来洒下一路风景，女生节，愿你拥有最靓的心情，享受最好的岁月！</span>";
 			var append = "<div class='words-div'>" + word + "</div>";
@@ -108,7 +121,6 @@ $(document).ready(function()
 		}
 		else if((name == "3" && inputName == "刘田田") || inputName == key)
 		{
-			alert("你是刘田田");
 			$(".content").empty();
 			var word = "<span class='word-span'>亲爱的刘田田：</span>";
 			word += "<span class='word-span'>佛说前世500次回眸，才换来今生的一次相遇。哈哈！打住打住，我并不是爱上你了。这是女生节必须要经过流程。可知今晚我修仙，就为了写这东西。你感动不？哎，还要150个字。我不知道该怎么写。就这样尬聊吧。算了算了，我跟你说几个笑话。我还是要留一点有意义的东西。</span>";
@@ -121,7 +133,6 @@ $(document).ready(function()
 		}
 		else if((name == "4" && inputName == "李晨") || inputName == key)
 		{
-			alert("你是李晨");
 			$(".content").empty();
 			var word = "<span class='word-span'>李晨：</span>";
 			word += "<span class='word-span'>你踏马从内蒙古走来，本以为你是百步飞剑的高大的汉子，最后，却是一个妹子。不过女的也没事，套马的妹子你威武雄壮，hhhh。（造我是谁吗？）</span>";
@@ -131,7 +142,6 @@ $(document).ready(function()
 		}
 		else if((name == "5" && inputName == "田田") || inputName == key)
 		{
-			alert("你是田田");
 			$(".content").empty();
 			var word = "<span class='word-span'>亲爱的田田：</span>";
 			word += "<span class='word-span'>田田，多么好听的名字，就如同人一样美丽。在以后的四年中，我们是同学，是朋友，每天都生活在一起，彼此接触，彼此了解，相互学习，今天是女生节，女生节快乐，希望你天天都很开心，有一个好心情，每天都过得充实。</span>";
@@ -141,7 +151,6 @@ $(document).ready(function()
 		}
 		else if((name == "6" && inputName == "柳彩云") || inputName == key)
 		{
-			alert("你是柳彩云");
 			$(".content").empty();
 			var word = "<span class='word-span'>亲爱的柳彩云：</span>";
 			word += "<span class='word-span'>在这个特殊的日子里为您写了一封信。</span>";
@@ -153,7 +162,6 @@ $(document).ready(function()
 		}
 		else if((name == "7" && inputName == "余洪铃") || inputName == key)
 		{
-			alert("你是余洪铃");
 			$(".content").empty();
 			var word = "<span class='word-span'>亲爱的余洪铃：</span>";
 			word += "<span class='word-span'>时光匆匆，马上就要到女生节了。报道的场景就像在昨天发生的一样，那时候就站在你后面，直到报完到才发现我们是同学。女生节男生劫，在经历了双十一的洗礼以后又要感受一把女生节，但是只要你们能快乐，那一切都是值得的。希望你以后能越活越漂亮，钞票越来越多，成绩，零食永远吃不完。</span>";
@@ -162,7 +170,6 @@ $(document).ready(function()
 		}
 		else if((name == "8" && inputName == "郑晓雯") || inputName == key)
 		{
-			alert("你是郑晓雯");
 			$(".content").empty();
 			var word = "<span class='word-span'>郑晓雯同学：</span>";
 			word += "<span class='word-span'>时间匆匆而过，就快到女生节了。女生节是以你们女生为主题的节日，想必你们女生对这天都很激动吧，一大堆礼物正等着你们。而反观我们男生就扎心了，又要花钱了。不少男生抱怨是正常的，但实际上男生们像我一样内心里还是支持这节日的，通过这种形式，我们同学之间的关系更熟了，更加了解认识，尤其对某些情窦初开的男生，这是个好机会呦。</span>";
@@ -173,7 +180,6 @@ $(document).ready(function()
 		}
 		else if((name == "9" && inputName == "夏秋爽") || inputName == key)
 		{
-			alert("你是夏秋爽");
 			$(".content").empty();
 			word += "<span class='word-span'>你是一个集霸气，智慧，开朗，活泼等等形容词于一体的“女孩子”，认识你已经三个月，无论从言语，还是从外表，都表达着一种无以言表的气质。你就好像是上品的西湖龙井，那种淡淡的苦涩是你的性格，越品你越有味道。在你那双又大又亮的眼睛里，我总能捕捉到你的宁静，你的热烈，你的聪颖，你的敏感。还记得辩论赛，你那高端而又上档次的话语，那端庄的举止，都让你显得有大家闺秀的神态。你也许没有一簇樱唇两排贝齿，但你的谈吐却高雅脱俗，机智过人。尽管你身材纤弱娇小，说话却正气凛然，很有力量，敢于向恶势力反抗，这是一种真正的精神美！爽儿哥，希望以后的你依旧是一个开朗活泼的女孩。女生节快乐哦！</span>";
 			var append = "<div class='words-div'>" + word + "</div>";
@@ -181,7 +187,6 @@ $(document).ready(function()
 		}
 		else if((name == "10" && inputName == "王丽燕") || inputName == key)
 		{
-			alert("你是王丽燕");
 			$(".content").empty();
 			var word = "<span class='word-span'>王丽燕同学：</span>";
 			word += "<span class='word-span'>你好！时间如白驹过隙，悄悄的流过，一转眼就到了女生节。女生节是以你们女生为主题的节日，通过这个节日，能让同学之间的关系更熟了，更加了解和认识，让我们真正的成为一个大家庭。</span>";
@@ -192,7 +197,6 @@ $(document).ready(function()
 		}
 		else if((name == "11" && inputName == "许淑姣") || inputName == key)
 		{
-			alert("你是许淑姣");
 			$(".content").empty();
 			var word = "<span class='word-span'>王丽燕同学：</span>";
 			word += "<span class='word-span'>女生节快乐啦。</span>";
@@ -203,7 +207,6 @@ $(document).ready(function()
 		}		
 		else if((name == "12" && inputName == "李洁欣") || inputName == key)
 		{
-			alert("你是李洁欣");
 			$(".content").empty();
 			var word = "<span class='word-span'>王丽燕同学：</span>";
 			word += "<span class='word-span'>常有闻闭月羞花，沉鱼落雁，善之极，丽难及。十里长亭望眼穿，百般想，千般念。你的容颜可以望穿世间的一切美好，你的气质可以渲染人生的一切纷繁。望你一眼，便是飘飖兮若轻云之坠月，再一眼，仿佛兮若流风之回雪。你的善不做作，你的美不浮夸，一切夸赞之词在你面前都是无力且垂死的挣扎。唯有完美可以与你平起平坐。值此女生节之际，洁欣，我想对你说三个字。谢谢你，谢谢你为班级的付出，谢谢你无私的奉献。愿女生节快乐………</span>";
@@ -226,5 +229,6 @@ $(document).ready(function()
 		<input id="name" class="form-control" type="text">
 		<button id="name-btn" class="btn btn-primary">确认</button>
 	</div>
+	<div class="footer"><span>copyright&#169; shenshenxin 923291020</span></div>
 </body>
 </html>
