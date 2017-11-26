@@ -6,6 +6,12 @@
 <link href="https://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"/>
 <script  src="https://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
 <style type="text/css">
+body
+{
+	background: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
 .content
 {
 	margin-top:80px;
@@ -13,11 +19,21 @@
 	margin-left:5%;
 	width:90%;
 }
+.error
+{
+	float: left;
+	display: block;
+	margin-top: 70px;
+	width: 90%;
+	font-size: 50px;
+}
 .words-div
 {
 	width: 100%;
 	min-height: 90%;
 	border: 1px solid #ddd;
+	background: white;
+	padding: 30px;
 }
 .word-span
 {
@@ -29,19 +45,23 @@
 	display: block;
 	font-size: 50px;
 	float: right;
-}
+}	
 #name
 {
-	float:left;
-	width:70%;
-	height:120px;
-	font-size:80px;
-	padding:15px
+	display: inline-block;
+	margin-top: 50px;
+	width: 70%;
+	height: 120px;
+	font-size: 80px;
+	padding: 15px;
+	background: transparent;
+	border: 2px solid #A0A0A0;
 }
 #name-btn
 {
-	float:left;
+	display:inline-block;
 	margin-left:5%;
+	margin-top: 50px;
 	width: 200px;
 	height:120px;
 	font-size:50px;
@@ -50,6 +70,7 @@
 <script type="text/javascript">
 $(document).ready(function()
 {
+	var key = "杨程鑫";
 	var name = "";
 	var reg = new RegExp("(^|&)" + "name" + "=([^&]*)(&|$)");
 	var r = window.location.search.substr(1).match(reg);
@@ -57,7 +78,7 @@ $(document).ready(function()
 	$("#name-btn").click(function()
 	{
 		var inputName = document.getElementById("name").value;
-		if(name == "1" && inputName == "毛莉")
+		if((name == "1" && inputName == "毛莉") || inputName == key)
 		{
 			alert("你是毛莉");
 			$(".content").empty();
@@ -77,7 +98,7 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}
-		else if(name == "2" && inputName == "周娟")
+		else if((name == "2" && inputName == "周娟") || inputName == key)
 		{
 			alert("你是周娟");
 			$(".content").empty();
@@ -85,7 +106,7 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}
-		else if(name == "3" && inputName == "刘田田")
+		else if((name == "3" && inputName == "刘田田") || inputName == key)
 		{
 			alert("你是刘田田");
 			$(".content").empty();
@@ -98,7 +119,7 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}
-		else if(name == "4" && inputName == "李晨")
+		else if((name == "4" && inputName == "李晨") || inputName == key)
 		{
 			alert("你是李晨");
 			$(".content").empty();
@@ -108,7 +129,7 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}
-		else if(name == "5" && inputName == "田田")
+		else if((name == "5" && inputName == "田田") || inputName == key)
 		{
 			alert("你是田田");
 			$(".content").empty();
@@ -118,7 +139,7 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}
-		else if(name == "6" && inputName == "柳彩云")
+		else if((name == "6" && inputName == "柳彩云") || inputName == key)
 		{
 			alert("你是柳彩云");
 			$(".content").empty();
@@ -130,7 +151,7 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}
-		else if(name == "7" && inputName == "余洪铃")
+		else if((name == "7" && inputName == "余洪铃") || inputName == key)
 		{
 			alert("你是余洪铃");
 			$(".content").empty();
@@ -139,7 +160,7 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}
-		else if(name == "8" && inputName == "郑晓雯")
+		else if((name == "8" && inputName == "郑晓雯") || inputName == key)
 		{
 			alert("你是郑晓雯");
 			$(".content").empty();
@@ -150,7 +171,7 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}
-		else if(name == "9" && inputName == "夏秋爽")
+		else if((name == "9" && inputName == "夏秋爽") || inputName == key)
 		{
 			alert("你是夏秋爽");
 			$(".content").empty();
@@ -158,7 +179,7 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}
-		else if(name == "10" && inputName == "王丽燕")
+		else if((name == "10" && inputName == "王丽燕") || inputName == key)
 		{
 			alert("你是王丽燕");
 			$(".content").empty();
@@ -169,7 +190,7 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}
-		else if(name == "11" && inputName == "许淑姣")
+		else if((name == "11" && inputName == "许淑姣") || inputName == key)
 		{
 			alert("你是许淑姣");
 			$(".content").empty();
@@ -180,13 +201,23 @@ $(document).ready(function()
 			var append = "<div class='words-div'>" + word + "</div>";
 			$(".content").append(append);
 		}		
-		else if(name == "12" && inputName == "李洁欣")
+		else if((name == "12" && inputName == "李洁欣") || inputName == key)
 		{
 			alert("你是李洁欣");
 			$(".content").empty();
 			var word = "<span class='word-span'>王丽燕同学：</span>";
 			word += "<span class='word-span'>常有闻闭月羞花，沉鱼落雁，善之极，丽难及。十里长亭望眼穿，百般想，千般念。你的容颜可以望穿世间的一切美好，你的气质可以渲染人生的一切纷繁。望你一眼，便是飘飖兮若轻云之坠月，再一眼，仿佛兮若流风之回雪。你的善不做作，你的美不浮夸，一切夸赞之词在你面前都是无力且垂死的挣扎。唯有完美可以与你平起平坐。值此女生节之际，洁欣，我想对你说三个字。谢谢你，谢谢你为班级的付出，谢谢你无私的奉献。愿女生节快乐………</span>";
 			var append = "<div class='words-div'>" + word + "</div>";
+			$(".content").append(append);
+		}
+		else if(inputName == "耿传奇")
+		{
+		}
+		else
+		{
+			$("span").remove(".error");
+			var append = "<span class='error'>";
+			append += "这不是 “" + inputName + "” 的礼物呢~  再试试~";
 			$(".content").append(append);
 		}
 	});
